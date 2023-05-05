@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="Dom.css">
+</head>
+<body>
+    <h1 style="text-align:center;color:red;text-decoration:underline">DOM</h1>
+
+    <p> Q1. Write the code to access element which is having id as "text"</p>
+<fieldset>
+    <pre style="color: brown;">Ans:
+        const textElement = document.getElementById("text");
+        console.log(textElement.innerText);
+    </pre>
+</fieldset>
+
+    <p>Q2. Write the code to access element which is having tag as "h1"</p>
+<fieldset>
+    <pre style="color: brown;">Ans:
+        const tagName = document.getElementsByTagName("h1");
+        console.log(tagName[0].innerText);
+    </pre>
+</fieldset>
+
+    <p>Q3. Write the code to access element which is having class as "box"</p>
+<fieldset>
+    <pre style="color: brown;">Ans:
+        const className = document.getElementsByClassName("box");
+        console.log(className[0].innerText);
+    </pre>
+</fieldset>
+
+    <p> Q 4. "&lt;h1&gt;Hello &lt;/h1&gt;
+        Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</p>
+    <fieldset>
+    <pre style="color: brown;">Ans:
+        &lt;h1 id="header"&gt;Hello&lt;/h1&gt;
+
+        const heading = document.getElementById("header");
+        heading.innerText="Hello World";
+    </pre>
+</fieldset>
+
+    <p>Q5. Create three cards on HTML page and arrange them using flex property in row or horizontal
+        direction and also create button at the bottom named "Change Flex direction". When user clicks on this button,
+        the cards arrangement should be changed to vertical direction.</p>
+<fieldset>
+    <pre style="color: brown;">
+        <div class="card">
+            <div class="main main1"></div>
+            <div class="main main2"></div>
+            <div class="main main3"></div>
+           
+        </div>
+        <button id="btn">change the direction</button>
+</pre>
+</fieldset>
+
+    <p> Q 6. What’s the difference between window vs document?</p>
+<fieldset>
+    <pre style="color: brown;">Ans:
+    <ul>
+
+        <li><b>Window</b> is the execution context and global object for that context's JavaScript.
+            It is the top most object and outermost element of the object hierarchy.</li>
+
+        <br>
+
+        <li><b>Document</b> contains the DOM, initialized by parsing HTML.Each HTML document that
+            gets loaded into a window becomes a document object. The document contains the contents of the page.</li>
+
+    </ul>
+
+    <br>
+</pre>
+</fieldset>
+    <p>Q 7. "&lt;h1&gt;Hello &lt;/h1&gt;
+        Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the
+        above given h1 tag using DOM functions"</p>
+<fieldset>
+    <pre style="color: brown;">Ans:
+        &lt;h1 id="heading"&gt;hello&lt;/h1&gt;
+
+        const header = document.getElementById("heading").style.color="red";
+    </pre>
+</fieldset>
+    <p>Q 8. Create an HTML page having content as Hello world and a button named Replace Text. When
+        user will click on this button page content should be changed to "Welcome to Elevation academy"</p>
+<fieldset>
+    <pre style="color: brown;">Ans:
+        &lt;p id="header"&gt;Hello World&lt;/p&gt;
+        &lt;button id="myBtn"&gt;Replace Text&lt;/button&gt;
+
+        const button = document.getElementById("myBtn");
+        button.addEventListener("click", myFunction);
+            
+        function myFunction() {
+            document.getElementById("header").innerText = "Welcome to Elevation Academy";
+        }
+    </pre>
+</fieldset>
+    <p>Q 9. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep
+        updating every second</p>
+<fieldset>
+    <pre style="color: brown;">Ans:
+        <div id="clock" style="font-size: xx-large; font-weight: bolder;"></div>
+
+        function timer(){
+            const time = new Date();
+            const hr = time.getHours();
+            const min = time.getMinutes();
+            const sec = time.getSeconds();
+            console.log(hr, min, sec);
+        }
+        setInterval(timer, 1000)
+    </pre>
+</fieldset>
+
+    <p>Q10. Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text
+        selected</p>
+<fieldset>
+    <pre style="color: brown;">Ans:
+    <select id="choose" onchange="selectValue()">
+        <option value="2019-2020">2019-2020</option>
+        <option value="2020-2021">2020-2021</option>
+        <option value="2021-2022">2021-2022</option>
+        <option value="2022-2023">2022-2023</option>
+        <option value="2023-2024">2023-2024</option>
+        <option value="2024-2025">2024-2025</option>
+    </select>
+    <p id="temp"></p>
+</pre>
+</fieldset>
+    <script src="Dom.js"></script>
+</body>
+</html>

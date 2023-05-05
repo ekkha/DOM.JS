@@ -1,0 +1,12 @@
+.card{
+    display: flex;
+    flex-direction: row;
+ 
+}
+.main{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    justify-content: space-evenly;
+    background-color: rgb(89, 87, 91); 
+}

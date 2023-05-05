@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(45, 13, 13);
+}
+.up{
+    position: relative;
+}
+#playAgain{
+    width:100px;
+    height:50px;
+}
+.number{
+    position:absolute;
+    right:0px;
+    top:0px;
+    color:white;
+    font-size: 25px;
+}
+.title{
+    width:270px;
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    margin:100px auto; 
+}
+hr{
+    height:8px;
+    background-color: white;
+}
+.down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 150px;
+}
+.excatNo{
+    width:100px;
+    height:100px;
+    margin:-60px auto;
+    background-color: white;
+    font-size: 35px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 30px;
+    font-weight: bold;
+}
+/* .left{
+    margin:150px 200px;
+} */
+#guessId{
+    width:140px;
+    height:60px;
+    border:1px solid white;
+    background-color:rgb(45, 13, 13);
+    color:white;
+    font-size: 30px;
+    text-align: center;
+}
+#check{
+    width:80px;
+    height:50px;
+    margin-left:30px;
+}
+.message{
+    width:400px;
+    height:50px;
+    color:white;
+    font-size: 25px;
+}
+.style{
+    width:100px;
+    height:50px;
+    color:white;
+    font-size: 16px;
+}
+.style2{
+    margin-top:-20px;
+}
